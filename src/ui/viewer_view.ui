@@ -246,7 +246,7 @@ border-radius: 10px;   /* Круглые углы */
     border-radius: 10px;   /* Круглые углы */</string>
             </property>
             <property name="text">
-             <string>Тут могла быть ваша реклама</string>
+             <string>Название файла</string>
             </property>
            </widget>
           </item>

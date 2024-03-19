@@ -10,12 +10,12 @@ The 3DViewer v1.0 program is implemented using the MVC pattern, as well as 3 pat
 Building the project, carried out by the make command in the src file, has the following purposes:
 
 * install - installing the application into the build directory located in the same directory.
-* delete - uninstallation.
+* uninstall - uninstallation.
 * dvi - information about opening.
 * dist - archiving the project.
 * clang - bringing the code to the clang-format style.
 * leaks - check for leaks using the leak utility on Mac OS.
-* clear - save the project from temporary files.
+* clean - save the project from temporary files.
 
 ## General form:
 ![alt text](<screens/Screenshot from 2024-03-19 13-46-10.png>)

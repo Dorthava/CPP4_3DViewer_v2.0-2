@@ -123,7 +123,21 @@ T ViewerModel::ConverterNumber(
     ++index;
   }
   if (check_p > 1) throw S21OperationException("Битый файл.");
-  while (degree-- != 0) result /= 10.;
+  while (degree--) result /= 10.;
+  if(subline[index] == 'e') {
+    int is_pos = 1;
+    int exp{};
+    if(subline[++index] == '-') is_pos = 0;
+    if(isdigit(subline[++index])) {
+      while (isdigit(subline[index])) {
+        exp *= 10.;
+        exp += subline[index++] - 48;
+      }
+    } else throw S21OperationException("Битый файл.");
+    if(is_pos) {
+      while(exp--) result *= 10.f;
+    } else while(exp--) result *= 0.1f;
+  }
   while (subline[index] != ' ' && subline[index] != '\0') ++index;
   return result * is_negative;
 }
@@ -161,7 +175,6 @@ void ViewerModel::TranslationPolygon(const char* line,
       if (line[i] == '\0') --i;
     }
   }
-  if (count == 1) throw S21PolygonParseException("Битый файл.");
 
   count = 0;
   WrappedArray arr;

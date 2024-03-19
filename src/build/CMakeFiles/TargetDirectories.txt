@@ -1,0 +1,16 @@
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/ViewerV20.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/edit_cache.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/rebuild_cache.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/list_install_components.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/install.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/install/local.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/install/strip.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/CMakeFiles/ViewerV20_autogen.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/QtGifImage.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/edit_cache.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/rebuild_cache.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/list_install_components.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/install.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/install/local.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/install/strip.dir
+/home/dorthava/CPP4_3DViewer_v2.0-2/src/build/third_party/QtGifImage/CMakeFiles/QtGifImage_autogen.dir

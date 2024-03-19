@@ -49,18 +49,18 @@ void ViewerView::ConnectSliders() {
           [this](int value) { ChangeSize(value); });
 
   connect(ui_->slider_TranslateX, &QSlider::valueChanged, this,
-          [this](int value) { ChangeTranslation(value, xAxis); });
+          [this](int value) { ChangeTranslation(value, kXAxis); });
   connect(ui_->slider_TranslateY, &QSlider::valueChanged, this,
-          [this](int value) { ChangeTranslation(value, yAxis); });
+          [this](int value) { ChangeTranslation(value, kYAxis); });
   connect(ui_->slider_TranslateZ, &QSlider::valueChanged, this,
-          [this](int value) { ChangeTranslation(value, zAxis); });
+          [this](int value) { ChangeTranslation(value, kZAxis); });
 
   connect(ui_->slider_RotateX, &QSlider::valueChanged, this,
-          [this](int value) { ChangeRotate(value, xAxis); });
+          [this](int value) { ChangeRotate(value, kXAxis); });
   connect(ui_->slider_RotateY, &QSlider::valueChanged, this,
-          [this](int value) { ChangeRotate(value, yAxis); });
+          [this](int value) { ChangeRotate(value, kYAxis); });
   connect(ui_->slider_RotateZ, &QSlider::valueChanged, this,
-          [this](int value) { ChangeRotate(value, zAxis); });
+          [this](int value) { ChangeRotate(value, kZAxis); });
 
   connect(ui_->slider_PointSize, &QSlider::valueChanged, this,
           [this](int value) {
@@ -163,10 +163,10 @@ void ViewerView::ChangeTranslation(int value, Axis axis) {
   }
 
   switch (axis) {
-    case xAxis:
+    case kXAxis:
       ui_->label_TranslateX->setText(QString::number(value));
       break;
-    case yAxis:
+    case kYAxis:
       ui_->label_TranslateY->setText(QString::number(value));
       break;
     default:
@@ -184,10 +184,10 @@ void ViewerView::ChangeRotate(int value, Axis axis) {
   }
 
   switch (axis) {
-    case xAxis:
+    case kXAxis:
       ui_->label_RotateX->setText(QString::number(value));
       break;
-    case yAxis:
+    case kYAxis:
       ui_->label_RotateY->setText(QString::number(value));
       break;
     default:

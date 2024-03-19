@@ -34,12 +34,12 @@ void ViewerModel::NotifyObserver() {
 const BodyData& ViewerModel::GetData() const noexcept { return data_; }
 
 void ViewerModel::MoveCoordinate(const s21::Axis& axis, const int& moving) {
-  float change = (moving - prev_moving_) * 0.01;
+  float change = (moving - prev_moving_[axis]) * 0.01;
   size_t index = data_.vertices_.size();
   for (size_t i{}; i != index; i += 3) {
     data_.vertices_[i + axis] += change;
   }
-  prev_moving_ = moving;
+  prev_moving_[axis] = moving;
 
   NotifyObserver();
 }
@@ -58,10 +58,10 @@ void ViewerModel::СhangeScale(const int& coefficient) {
 
 void ViewerModel::RotateCoordinate(const Axis& axis, const int& number) {
   switch (axis) {
-    case xAxis:
+    case kXAxis:
       SetStrategy(&rotate_x_);
       break;
-    case yAxis:
+    case kYAxis:
       SetStrategy(&rotate_y_);
       break;
     default:
@@ -79,7 +79,8 @@ void ViewerModel::ClearAll() {
   rotate_y_.UpdateLast(0);
   rotate_z_.UpdateLast(0);
 
-  prev_moving_ = 0.;
+  for (int i{}; i != 3; ++i) prev_moving_[i] = 0.;
+
   last_coefficient_ = 100;
 
   data_.vertices_.clear();

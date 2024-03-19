@@ -7,7 +7,7 @@ int Strategy::GetLast() const noexcept { return last_value_; }
 void Strategy::ImplementationGeneral(std::vector<float>& v, const int& value,
                                      const int& axis) {
   float sigma_ = pi_ * (value - last_value_) / 180.f;
-  int v_size = v.size() / 3;
+  size_t v_size = v.size() / 3;
   float sin_function = sin(sigma_);
   float cos_function = cos(sigma_);
 

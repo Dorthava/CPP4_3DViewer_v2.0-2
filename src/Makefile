@@ -38,8 +38,13 @@ dist:
 clang:
 	@cp ../materials/linters/.clang-format .
 	@echo "===> Formatting your code for Google Style <==="
-	@clang-format -i -style=GOOGLE *.cc viewer/*.cc viewer/*.cpp viewer/*.h viewer/observer/*.h viewer/strategy/*.cc viewer/strategy/*.h
+	@clang-format -i -style=GOOGLE ui/*.ui *.cc viewer/*.cc viewer/*.cpp viewer/*.h viewer/observer/*.h viewer/strategy/*.cc viewer/strategy/*.h
 	@rm -rf .clang-format
 	
 clean: uninstall
 	@rm -rf ./.clang-format tests
+
+leaks: clean tests
+	@leaks -atExit -- ./tests
+
+.PHONY: install uninstall clean tests dvi dist clang

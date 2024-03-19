@@ -30,7 +30,7 @@ typedef struct BodyData {
   float center_[3];
 } BodyData;
 
-enum Axis { xAxis, yAxis, zAxis };
+enum Axis { kXAxis, kYAxis, kZAxis };
 // Нужно передать название пути до файла(если файл не найден, то вернем throw)
 class ViewerModel : private Subject, protected Context {
  public:
@@ -75,7 +75,7 @@ class ViewerModel : private Subject, protected Context {
   RotateX rotate_x_;
   RotateY rotate_y_;
   RotateZ rotate_z_;
-  float prev_moving_;
+  float prev_moving_[3];
   float last_coefficient_;
 };
 

@@ -72,8 +72,8 @@ void OpenGLView::ChangeProjection() {
               heapHeight, highs[5] * 110);
     glTranslatef(0, 0, -1 * 3);
   } else {
-    glOrtho(highs[0] * 1.5, highs[1] * 1.5, highs[2] * 1.5, highs[3] * 1.5,
-            highs[4] * 3.5, highs[5] * 3.5);
+    glOrtho(-highs[0] * 2.5, highs[1] * 2.5, -highs[2] * 2.5, highs[3] * 2.5,
+            highs[4] * 8, highs[5] * 8);
   }
 }
 

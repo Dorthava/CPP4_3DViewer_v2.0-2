@@ -1,4 +1,5 @@
 #include "openglview.h"
+
 #include "../third_party/QtGifImage/include/gifimage/qgifimage.h"
 namespace s21 {
 

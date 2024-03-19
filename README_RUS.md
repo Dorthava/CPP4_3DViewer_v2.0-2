@@ -18,5 +18,5 @@ leaks - проверка на утечки утилитой leaks на Mac OS,
 clean - очистить проект от временных файлов.
 
 ## Общий вид:
-![alt text](<screens/Screenshot from 2024-03-19 13-46-10.png>)
-![alt text](<screens/Screenshot from 2024-03-19 13-47-22.png>)
+![alt text](<screenshots/Screenshot from 2024-03-19 13-46-10.png>)
+![alt text](<screenshots/Screenshot from 2024-03-19 13-47-22.png>)

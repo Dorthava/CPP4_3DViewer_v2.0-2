@@ -18,5 +18,5 @@ Building the project, carried out by the make command in the src file, has the f
 * clean - save the project from temporary files.
 
 ## General form:
-![alt text](<screens/Screenshot from 2024-03-19 13-46-10.png>)
-![alt text](<screens/Screenshot from 2024-03-19 13-47-22.png>)
+![alt text](<screenshots/Screenshot from 2024-03-19 13-46-10.png>)
+![alt text](<screenshots/Screenshot from 2024-03-19 13-47-22.png>)
